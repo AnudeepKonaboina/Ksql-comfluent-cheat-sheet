@@ -1,1 +1,1 @@
-# Ksql-comfluent-cheat-sheet
+# Ksql-confluent-cheat-sheet
