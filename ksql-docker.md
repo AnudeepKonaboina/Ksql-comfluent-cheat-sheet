@@ -9,11 +9,11 @@ Installation of KSQL using docker-compose:
 Output:
 =======
 ```
-[ak0107@devopsagent1 ~]$ curl --silent --output docker-compose.yml \
+[user@node ~]$ curl --silent --output docker-compose.yml \
 >   https://raw.githubusercontent.com/confluentinc/cp-all-in-one/6.1.0-post/cp-all-in-one/
-[ak0107@devopsagent1 ~]$ ll -tr
--rw-rw-r--. 1 ak0107 ak0107 6644 Mar  5 14:07 docker-compose.yml
-[ak0107@devopsagent1 ~]$ docker-compose up -d
+[user@node ~]$ ll -tr
+-rw-rw-r--. 1 user user 6644 Mar  5 14:07 docker-compose.yml
+[user@node ~]$ docker-compose up -d
 Creating zookeeper ... done
 Creating broker    ... done
 Creating schema-registry ... done
@@ -23,7 +23,7 @@ Creating ksqldb-server   ... done
 Creating control-center  ... done
 Creating ksqldb-cli      ... done
 Creating ksql-datagen    ... done
-[ak0107@devopsagent1 ~]$ docker ps
+[user@node ~]$ docker ps
 CONTAINER ID   IMAGE                                             COMMAND                  CREATED        STATUS        PORTS                                                                   NAMES
 153de4de9556   confluentinc/cp-enterprise-control-center:6.1.0   "/etc/confluent/dock…"   22 hours ago   Up 22 hours   0.0.0.0:9021->9021/tcp                                                  control-center
 2f1db151c30c   confluentinc/ksqldb-examples:6.1.0                "bash -c 'echo Waiti…"   22 hours ago   Up 22 hours                                                                           ksql-datagen
